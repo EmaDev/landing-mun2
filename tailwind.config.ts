@@ -8,12 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Poppins: ["Poppins", "sans-serif"]
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    screens: {
+      'tablet': '720px',
+      'laptop': '1200px',
+      'desktop': '1900px',
+    }
   },
   plugins: [],
 }

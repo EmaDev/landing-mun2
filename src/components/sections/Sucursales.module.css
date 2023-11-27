@@ -1,0 +1,8 @@
+.banner {
+    background: linear-gradient(transparent, transparent), 
+    url("../../assets/background.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}

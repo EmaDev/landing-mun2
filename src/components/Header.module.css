@@ -1,0 +1,23 @@
+.header::before {
+  content: '';
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  transform-origin: bottom left;
+  transform: skewY(-2deg);
+  background-color: #fff;
+  z-index:99
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(170, 0, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
