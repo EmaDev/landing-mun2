@@ -73,13 +73,13 @@ export default function Home() {
           style={{ filter: "hue-rotate(0deg) saturate(1000%) brightness(100%) contrast(100%)" }} />
 
         <div className='text-left w-full'>
-          <h3 className='text-3xl font-bold font-Poppins max-w-[550px] mb-6'>The best early education programs for your child</h3>
+          <h3 className='text-3xl font-bold font-Poppins max-w-[550px] mb-6'>Vestibulum ac diam sit amet quam vehicula</h3>
           <p className='max-w-[450px] text-lg'>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
         </div>
         <div className='grid tablet:grid-cols-2 gap-10 mt-10 laptop:w-3/4 relative z-20'>
           {[1, 2, 3].map(item => (
-            <CardSobreNosotros classes={(item == 2) ? "tablet:mt-[-75px]" : ""} img={item} />
+            <CardSobreNosotros key={item + "-nosotros"} classes={(item == 2) ? "tablet:mt-[-75px]" : ""} img={item} />
           ))}
         </div>
       </section>

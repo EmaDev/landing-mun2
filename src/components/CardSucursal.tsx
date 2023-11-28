@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaClock  } from "react-icons/fa";
 
 export const CardSucursal = () => {
     return (
-        <div className='rounded-md shadow-md bg-white'>
+        <div className='rounded-md shadow-md bg-white border '>
             <div className='bg-red-400 rounded-t-md p-2 text-white flex justify-center items-center gap-2'>
                 <FaMapMarkerAlt />
                 <h3 className=''>Plaza central</h3>
