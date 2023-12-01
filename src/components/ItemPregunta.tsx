@@ -25,13 +25,13 @@ export const ItemPregunta = ({data}:Props) => {
     return (
         <div className='w-full tablet:w-3/4 p-4 px-6 border rounded-lg text-sm margin-auto my-4 shadow-md cursor-pointer'>
             <div className='flex justify-between items-center' onClick={onToggleCaret}>
-                <p className='font-bold'>{data.pregunta}</p>
+                <p className='font-bold mr-6'>{data.pregunta}</p>
                 <button ref={caretRef}
                 style={{transitionProperty: "transform", transitionDuration: "300ms", transitionTimingFunction: "ease-in-out"}}>
                     <PiCaretDownBold size={"18px"}/>
                 </button>
             </div>
-            <p ref={respRef} className='mt-6 hidden duration-300'>{data.respuesta}</p>
+            <p ref={respRef} className='mt-6 hidden duration-500'>{data.respuesta}</p>
         </div>
     )
 }

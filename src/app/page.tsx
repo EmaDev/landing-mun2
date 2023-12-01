@@ -67,10 +67,10 @@ export default function Home() {
       <section id="nosotros" className='min-h-[100vh] w-3/4 tablet:w-full laptop:w-3/4 flex flex-col items-center justify-items-center tablet:p-20 relative'>
         <img alt="" src='https://bright.tailwindawesome.com/_next/static/media/curved-dotted-line.38bf1b54.svg'
           className='absolute right-0 left-0 m-auto z-10'
-          style={{ filter: "saturate(1000%) brightness(100%) hue-rotate(0deg)" }} />
+          style={{ filter: "saturate(1000%) brightness(100%) hue-rotate(50deg)" }} />
         <img alt="" src='https://bright.tailwindawesome.com/_next/static/media/looped-dotted-line.0214bb0b.svg'
           className='absolute right-0 left-0 bottom-40 m-auto z-10'
-          style={{ filter: "hue-rotate(0deg) saturate(1000%) brightness(100%) contrast(100%)" }} />
+          style={{ filter: "saturate(1000%) brightness(100%) hue-rotate(50deg)" }} />
 
         <div className='text-left w-full'>
           <h3 className='text-3xl laptop:text-5xl font-bold font-Poppins max-w-[550px] mb-6'>Sobre nosotros</h3>
@@ -91,24 +91,8 @@ export default function Home() {
         <div className={`mt-4 p-4 desktop:w-3/4 flex flex-col items-center justify-center`}>
           <h2 className='text-3xl tablet:text-4xl laptop:text-5xl font-bold font-Poppins text-center'>Conoce Nuestras Sucursales</h2>
           <div className='flex text-xs tablet:text-lg mt-6 font-bold font-mono'>
-            <h4 className='flex items-center'>
-              <span>Santo Domingo</span>
-              <RiArrowDropRightLine />
-            </h4>
-            <h4 className='flex items-center'>
-              <span>Satiago</span>
-              <RiArrowDropRightLine />
-            </h4>
-            <h4 className='flex items-center'>
-              <span>Puerto Plata</span>
-              <RiArrowDropRightLine />
-            </h4>
-            <h4 className='flex items-center'>
-              <span>Cabarete</span>
-              <RiArrowDropRightLine />
-            </h4>
-            <h4 className='flex items-center'>
-              <span>Sosua</span>
+            <h4>
+              {"Santo Domingo > Santiago > Puerto Plata > Cabarete > Sosua"}
             </h4>
           </div>
           <div className='mt-10 grid grid-cols-2 gap-3 tablet:grid-cols-3 

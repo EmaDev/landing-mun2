@@ -46,8 +46,8 @@ export const NavBar = () => {
     }
 
     return (
-        <div className={`z-[90] py-4 laptop:py-2 w-full fixed bg-red-400 border-b-[1px] border-red-500 shadow-md text-white duration-300
-        ${ navHidden && "py-1 laptop:py-0"}`}
+        <div className={`z-[90] py-[0.6rem] laptop:py-2 w-full fixed bg-red-400 border-b-[1px] border-red-500 shadow-md text-white duration-300
+        ${ navHidden && "py-0"}`}
         >
 
             <div ref={bgRef} onClick={onToggleMenu} className='hidden laptop:hidden absolute bg-[rgba(0,0,0,0.4)] w-full h-[100vh] top-[50px]'></div>
@@ -60,7 +60,7 @@ export const NavBar = () => {
                 <div className='flex justify-center items-center gap-12'>
                     <div ref={navRef} className='flex absolute laptop:w-auto laptop:static min-h-[70vh] 
                           laptop:min-h-fit laptop:shadow-none
-                          right-0 z-[80] top-[-100vh] duration-300 w-full rounded-bl-full laptop:rounded-none'>
+                          right-0 z-[80] top-[-100vh] duration-200 w-full rounded-bl-full laptop:rounded-none'>
                         <ul className='flex flex-col laptop:flex-row gap-[4vw] items-end w-full 
                             px-12 pt-20 laptop:p-0 bg-red-400 rounded-bl-full shadow-lg laptop:shadow-none'>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
