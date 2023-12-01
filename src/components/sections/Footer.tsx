@@ -9,10 +9,18 @@ export const Footer = () => {
                 <div className='hidden tablet:inline-block tablet:w-fit tablet:justify-self-start'>
                     <p className='font-bold text-xl'>Secciones</p>
                     <ul className=''>
-                        <li className='my-4'>Nosotros</li>
-                        <li className='my-4'>Contacto</li>
-                        <li className='my-4'>Sucursales</li>
-                        <li className='my-4'>Novedades</li>
+                        <li className='my-4'>
+                            <Link className='hover:text-red-300' href={"#nosotros"}>Nosotros</Link>
+                        </li>
+                        <li className='my-4'>
+                            <Link className='hover:text-red-300' href={"#sucursales"}>Sucursales</Link>
+                        </li>
+                        <li className='my-4'>
+                            <Link className='hover:text-red-300' href={"#novedades"}>Novedades</Link>
+                        </li>
+                        <li className='my-4'>
+                            <Link className='hover:text-red-300' href={"#preguntas"}>Preguntas frecuentes</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className='w-fit justify-self-end'>
@@ -46,9 +54,9 @@ export const Footer = () => {
 
             <div className='w-3/4 tablet:flex justify-center tablet:justify-between text-center'>
                 <span>© 2023 todos los derechos reservados</span>
-                <br/>
-                <span className='mt-8 tablet:mt-0 flex text-center'>Desarrollado por 
-                <Link className='font-bold ml-1' href={"https://www.instagram.com/bapp.estudio/"}> Bapp Estudio</Link></span>
+                <br />
+                <span className='mt-8 tablet:mt-0 flex text-center'>Desarrollado por
+                    <Link className='font-bold ml-1' href={"https://www.instagram.com/bapp.estudio/"}> Bapp Estudio</Link></span>
             </div>
         </footer>
     )

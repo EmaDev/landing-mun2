@@ -86,7 +86,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="sucursales" className={`min-h-[80vh] w-full flex items-center justify-center ${styles.banner} my-10 tablet:my-0`}>
+      <section id="sucursales" className={`min-h-[80vh] w-full flex items-center justify-center 
+      ${styles.banner} my-10 tablet:my-0 laptop:pb-10`}>
         <div className={`mt-4 p-4 desktop:w-3/4 flex flex-col items-center justify-center`}>
           <h2 className='text-3xl tablet:text-4xl laptop:text-5xl font-bold font-Poppins text-center'>Conoce Nuestras Sucursales</h2>
           <div className='flex text-xs tablet:text-lg mt-6 font-bold font-mono'>

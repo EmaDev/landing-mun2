@@ -171,4 +171,16 @@ export const PREGUNTAS_FRECUENTES:PreguntaFrecuenteInterface[] = [
         sapiente recusandae ipsa voluptatem at optio ipsam ad! Quibusdam repellendus nam molestiae, assumenda error 
         exercitationem. Eius, possimus.`
     },
+    {
+        pregunta: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+        respuesta: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, nobis suscipit quas reiciendis 
+        sapiente recusandae ipsa voluptatem at optio ipsam ad! Quibusdam repellendus nam molestiae, assumenda error 
+        exercitationem. Eius, possimus.`
+    },
+    {
+        pregunta: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+        respuesta: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, nobis suscipit quas reiciendis 
+        sapiente recusandae ipsa voluptatem at optio ipsam ad! Quibusdam repellendus nam molestiae, assumenda error 
+        exercitationem. Eius, possimus.`
+    },
 ] 

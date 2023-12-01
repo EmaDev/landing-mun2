@@ -46,8 +46,8 @@ export const NavBar = () => {
     }
 
     return (
-        <div className={`z-[999] w-full fixed bg-red-400 border-b-[1px] border-red-500 shadow-md text-white duration-300
-        ${ !navHidden && "py-2"}`}
+        <div className={`z-[999] py-2 w-full fixed bg-red-400 border-b-[1px] border-red-500 shadow-md text-white duration-300
+        ${ navHidden && "tablet:py-0"}`}
         >
 
             <div ref={bgRef} onClick={onToggleMenu} className='hidden laptop:hidden absolute bg-[rgba(0,0,0,0.4)] w-full h-[100vh] top-[50px]'></div>
@@ -63,19 +63,19 @@ export const NavBar = () => {
                  left-0 top-[-100vh] duration-300 w-full rounded-bl-full laptop:rounded-none'>
                         <ul className='flex flex-col laptop:flex-row gap-[4vw] items-end w-full 
                     px-12 pt-20 laptop:p-0 bg-red-400 rounded-bl-full shadow-lg laptop:shadow-none'>
-                            <li className='text-lg' onClick={onToggleMenu}>
+                            <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#nosotros"}>Sobre Nosotros</Link>
                             </li>
-                            <li className='text-lg' onClick={onToggleMenu}>
+                            <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#sucursales"}>Sucursales</Link>
                             </li>
-                            <li className='text-lg' onClick={onToggleMenu}>
+                            <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#novedades"}>Novedades</Link>
                             </li>
-                            <li className='text-lg' onClick={onToggleMenu}>
+                            <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#preguntas"}>Preguntas frecuentes</Link>
                             </li>
-                            <li className='text-lg' onClick={onToggleMenu}>
+                            <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#"}>Contacto</Link>
                             </li>
                         </ul>
