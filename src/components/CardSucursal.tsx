@@ -1,14 +1,18 @@
+import { SucursalInterface } from '@/interfaces';
 import React from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt, FaClock  } from "react-icons/fa";
 
-export const CardSucursal = () => {
+interface Props {
+    data: SucursalInterface;
+}
+export const CardSucursal = ({data}:Props) => {
     return (
         <div className='rounded-md shadow-md bg-white border '>
             <div className='bg-red-400 rounded-t-md p-2 text-white flex justify-center items-center gap-2'>
                 <FaMapMarkerAlt />
-                <h3 className=''>Plaza central</h3>
+                <h3 className=''>{data.nombre}</h3>
             </div>
-            <p className='my-1 text-sm text-slate-400'>Santo Domingo</p>
+            <p className='my-1 text-sm text-slate-400'>{data.ubicacion}</p>
             <div className='p-3 font-mono'>
                 <p className='mb-4 text-sm flex justify-around  items-center'>
                     <FaClock  />

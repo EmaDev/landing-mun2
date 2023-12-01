@@ -44,10 +44,11 @@ export const Footer = () => {
 
             <div className='w-3/4 h-[1px] bg-[rgba(255,255,255,0.5)] my-8'></div>
 
-            <div className='w-3/4 tablet:flex tablet:justify-between text-center'>
+            <div className='w-3/4 tablet:flex justify-center tablet:justify-between text-center'>
                 <span>© 2023 todos los derechos reservados</span>
                 <br/>
-                <span className='mt-8 tablet:mt-0 flex'>Desarrollado por <span className='font-bold ml-1'> Bapp Estudio</span></span>
+                <span className='mt-8 tablet:mt-0 flex text-center'>Desarrollado por 
+                <Link className='font-bold ml-1' href={"https://www.instagram.com/bapp.estudio/"}> Bapp Estudio</Link></span>
             </div>
         </footer>
     )
