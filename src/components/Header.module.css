@@ -8,7 +8,7 @@
   transform-origin: bottom left;
   transform: skewY(-2deg);
   background-color: #fff;
-  z-index:99
+  z-index:80
 }
 
 .circle {

@@ -40,14 +40,14 @@ export const NavBar = () => {
     const onToggleMenu = () => {
         const navElement = navRef.current;
         const bgElement = bgRef.current;
-        navElement.classList.toggle('top-[40px]');
+        navElement.classList.toggle('top-[50px]');
         bgElement.classList.toggle('hidden');
         setNavAbierto(!navAbierto);
     }
 
     return (
-        <div className={`z-[999] py-2 w-full fixed bg-red-400 border-b-[1px] border-red-500 shadow-md text-white duration-300
-        ${ navHidden && "tablet:py-0"}`}
+        <div className={`z-[90] py-4 laptop:py-2 w-full fixed bg-red-400 border-b-[1px] border-red-500 shadow-md text-white duration-300
+        ${ navHidden && "py-1 laptop:py-0"}`}
         >
 
             <div ref={bgRef} onClick={onToggleMenu} className='hidden laptop:hidden absolute bg-[rgba(0,0,0,0.4)] w-full h-[100vh] top-[50px]'></div>
@@ -58,11 +58,11 @@ export const NavBar = () => {
                 </div>
 
                 <div className='flex justify-center items-center gap-12'>
-                    <div ref={navRef} className='flex absolute laptop:w-auto laptop:static min-h-[100vh] 
-                 laptop:min-h-fit laptop:shadow-none
-                 left-0 top-[-100vh] duration-300 w-full rounded-bl-full laptop:rounded-none'>
+                    <div ref={navRef} className='flex absolute laptop:w-auto laptop:static min-h-[70vh] 
+                          laptop:min-h-fit laptop:shadow-none
+                          right-0 z-[80] top-[-100vh] duration-300 w-full rounded-bl-full laptop:rounded-none'>
                         <ul className='flex flex-col laptop:flex-row gap-[4vw] items-end w-full 
-                    px-12 pt-20 laptop:p-0 bg-red-400 rounded-bl-full shadow-lg laptop:shadow-none'>
+                            px-12 pt-20 laptop:p-0 bg-red-400 rounded-bl-full shadow-lg laptop:shadow-none'>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#nosotros"}>Sobre Nosotros</Link>
                             </li>
@@ -81,14 +81,14 @@ export const NavBar = () => {
                         </ul>
                     </div>
                     <div className='flex justify-center items-center gap-4'>
-                        <Link href={"https://www.instagram.com/mun2online/"} target={"_blank"}>
-                            <FaInstagram size="1.6rem" />
+                        <Link className={`${navHidden ? "text-2xl" : "text-3xl"} duration-300`} href={"https://www.instagram.com/mun2online/"} target={"_blank"}>
+                            <FaInstagram/>
                         </Link>
-                        <button className='laptop:hidden' onClick={onToggleMenu}>
+                        <button className={`laptop:hidden ${navHidden ? "text-3xl" : "text-4xl"} duration-300`} onClick={onToggleMenu}>
                             {navAbierto ?
-                                <MdOutlineClose size="2rem" />
+                                <MdOutlineClose />
                                 :
-                                <MdMenu size="2rem" />
+                                <MdMenu />
                             }
 
                         </button>
