@@ -13,7 +13,7 @@ export const GaleriaImagenes = () => {
                     {
                         [1, 2, 7, 8,].map(item => (
                             <Image alt="img" src={require(`../assets/galeria/${item}.jpg`)}
-                                
+                                key={item + "-imagen"}
                             />
                         ))
                     }
