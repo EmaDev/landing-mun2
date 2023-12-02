@@ -21,3 +21,9 @@
     right: 5%;
     transform: translateY(-50%);
 }
+
+@media (max-height: 680px) {
+  .pequeno{
+    display: none;
+  }
+}

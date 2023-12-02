@@ -33,7 +33,7 @@ export const Footer = () => {
                             <div className=''>
                                 <span className='font-bold'>Email</span>
                                 <br />
-                                <Link href={"#"} className='text-md'>bapp@gmail.com</Link>
+                                <Link href={"#"} className='text-md'>mun2@gmail.com</Link>
                             </div>
                         </li>
                         <li className='flex justify-center gap-8 items-center my-4'>
@@ -43,7 +43,7 @@ export const Footer = () => {
                             <div className=''>
                                 <span className='font-bold'>Telefono</span>
                                 <br />
-                                <Link href={"#"} className='text-md'>bapp@gmail.com</Link>
+                                <Link href={"#"} className='text-md'>444444444</Link>
                             </div>
                         </li>
                     </ul>

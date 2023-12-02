@@ -13,13 +13,13 @@ export const CardSucursal = ({ data }: Props) => {
                 <h3 className=''>{data.nombre}</h3>
             </div>
             <p className='my-1 text-sm text-slate-400'>{data.ubicacion}</p>
-            <div style={{ display: "grid", gridTemplateColumns: "10% 90%" }} className='p-3 font-mono w-full'>
-                <FaClock />
+            <div style={{display: "grid", gridTemplateColumns: "10% 90%"}} className='p-3 font-mono w-full gap-1'>
+                <FaClock/>
                 <span className='text-xs tablet:text-sm'>Lunes a sabados de 9 AM a 7 PM</span>
                 <FaPhoneAlt/>
-                <span>809-806-0798</span>
+                <span className='text-xs tablet:text-sm'>809-806-0798</span>
                 <FaMapMarkerAlt/>
-                <span>2 Nivel</span>
+                <span className='text-xs tablet:text-sm'>2 Nivel</span>
             </div>
         </div>
     )

@@ -1,9 +1,5 @@
 import { CardSucursal } from '@/components/CardSucursal';
 import { Header } from '@/components/Header';
-import { IoMdCart } from "react-icons/io";
-import { FiCheck } from "react-icons/fi";
-import { CardDoble } from '@/components/CardDoble';
-import { RiArrowDropRightLine } from "react-icons/ri";
 import { NavBar } from '@/components/NavBar';
 import styles from "../components/sections/Sucursales.module.css";
 import { CardSobreNosotros } from '@/components/CardSobreNosotros';
@@ -11,6 +7,9 @@ import { CardOpinion } from '@/components/CardOpinion';
 import { ItemPregunta } from '@/components/ItemPregunta';
 import { Footer } from '@/components/sections/Footer';
 import { DATA_SOBRE_NOSOTROS, PREGUNTAS_FRECUENTES, SUCURSALES, TESTIMONIOS } from '@/assets/contenido';
+import { GaleriaImagenes } from '@/components/GaleriaImagenes';
+import { Paginador } from '@/components/Paginador';
+import { Novedades } from '@/components/sections/Novedades';
 
 export default function Home() {
   return (
@@ -21,55 +20,14 @@ export default function Home() {
        </div>*/}
       <Header />
 
-      <section id="novedades" className='m-6 min-h-[90vh] tablet:grid tablet:grid-cols-2 tablet:gap-40 items-center'>
-        <div className='tablet:w-[350px] laptop:w-[550px]'>
-          <button className='p-2 bg-red-400 rounded-full relative text-white
-         shadow-lg text-xs -rotate-3 mb-6'>Un MUN2 de opciones</button>
-          <h3 className='text-2xl desktop:text-4xl font-bold font-Poppins mb-8'>La tienda MUN2 en Plaza Central expandio sus espacios</h3>
-
-          <p className='text-lg desktop:text-xl desktop:my-12'>Ahora podran encontrar un gran variedad de productos. Ademas de ropa y zapatos
-            como en todas nuestras sucursales, encontran mucho mas.
-          </p>
-
-          <ul className='mt-6 bg-orange-100 p-6 pt-10 desktop:py-16 rounded-md relative text-md desktop:text-xl'>
-            <span className='absolute left-5 -top-5 bg-blue-400 p-2 rounded-lg shadow-md'>
-              <IoMdCart size="22px" color="#fff" />
-            </span>
-            <li className='flex align-between items-center gap-4 mb-2'>
-              <FiCheck color="green" size="22px" />
-              <p>Electrodomesticos</p>
-            </li>
-            <li className='flex align-between items-center gap-4 mb-2'>
-              <FiCheck color="green" size="22px" />
-              <p>Juguetes</p>
-            </li>
-            <li className='flex align-between items-center gap-4 mb-2'>
-              <FiCheck color="green" size="22px" />
-              <p>Ropa de cama</p>
-            </li>
-            <li className='flex align-between items-center gap-4 mb-2'>
-              <FiCheck color="green" size="22px" />
-              <p>Articulos para el hogar</p>
-            </li>
-            <li className='flex align-between items-center gap-4 mb-2'>
-              <FiCheck color="green" size="22px" />
-              <p>Las mejores marcas en ropa y zapatosF</p>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <CardDoble image1={require("../assets/plaza-central/1.jpeg")} image2={require("../assets/plaza-central/2.jpeg")} />
-          <CardDoble image1={require("../assets/plaza-central/3.jpeg")} image2={require("../assets/plaza-central/4.jpeg")} />
-        </div>
-      </section>
+      <Novedades/>
 
       <section id="nosotros" className='min-h-[100vh] w-3/4 tablet:w-full laptop:w-3/4 flex flex-col items-center justify-items-center tablet:p-20 relative'>
         <img alt="" src='https://bright.tailwindawesome.com/_next/static/media/curved-dotted-line.38bf1b54.svg'
-          className='absolute right-0 left-0 m-auto z-10'
+          className='hidden tablet:flex absolute right-0 left-0 m-auto z-10'
           style={{ filter: "saturate(1000%) brightness(100%) hue-rotate(50deg)" }} />
         <img alt="" src='https://bright.tailwindawesome.com/_next/static/media/looped-dotted-line.0214bb0b.svg'
-          className='absolute right-0 left-0 bottom-40 m-auto z-10'
+          className='hidden tablet:flex absolute right-0 left-0 bottom-40 m-auto z-10'
           style={{ filter: "saturate(1000%) brightness(100%) hue-rotate(50deg)" }} />
 
         <div className='text-left w-full'>
@@ -78,14 +36,14 @@ export default function Home() {
             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
         </div>
         <div className='grid tablet:grid-cols-2 gap-10 mt-10 laptop:w-3/4 relative z-20'>
-          {DATA_SOBRE_NOSOTROS.map( (item, i) => (
-            <CardSobreNosotros key={ item.titulo + i + "-nosotros"} 
-            classes={(i == 1) ? "tablet:mt-[-75px]" : ""}
-            data={item} />
+          {DATA_SOBRE_NOSOTROS.map((item, i) => (
+            <CardSobreNosotros key={item.titulo + i + "-nosotros"}
+              classes={(i == 1) ? "tablet:mt-[-75px]" : ""}
+              data={item} />
           ))}
         </div>
       </section>
-
+      <div className='w-4/5 h-[2px] bg-[rgba(0,0,0,0.1)]'></div>
       <section id="sucursales" className={`min-h-[80vh] w-full flex items-center justify-center 
       ${styles.banner} my-10 tablet:my-0 laptop:pb-10`}>
         <div className={`mt-4 p-4 desktop:w-3/4 flex flex-col items-center justify-center`}>
@@ -97,8 +55,8 @@ export default function Home() {
           </div>
           <div className='mt-10 grid grid-cols-2 gap-3 tablet:grid-cols-3 
         desktop:grid-cols-4 tablet:gap-10 text-center flex justify-center'>
-            {SUCURSALES.map( (suc, i) =>
-              <CardSucursal key={i + "-" + suc.nombre} data={suc}/>
+            {SUCURSALES.map((suc, i) =>
+              <CardSucursal key={i + "-" + suc.nombre} data={suc} />
             )}
           </div>
         </div>
@@ -124,8 +82,8 @@ export default function Home() {
 
         <div className='mt-8 flex flex-col margin-auto justify-center items-center'>
           {
-            PREGUNTAS_FRECUENTES.map( (preg, i) => (
-              <ItemPregunta key={i + "-pregunta"} data={preg}/>
+            PREGUNTAS_FRECUENTES.map((preg, i) => (
+              <ItemPregunta key={i + "-pregunta"} data={preg} />
             ))
           }
         </div>
