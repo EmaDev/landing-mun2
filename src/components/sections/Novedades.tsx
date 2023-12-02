@@ -4,15 +4,13 @@ import React, { useState } from 'react';
 import { IoMdCart } from "react-icons/io";
 import { FiCheck } from "react-icons/fi";
 import { CardDoble } from '@/components/CardDoble';
-import { RiArrowDropRightLine } from "react-icons/ri";
 import { GaleriaImagenes } from '../GaleriaImagenes';
 import { Paginador } from '../Paginador';
-import styles from "./Navedades.module.css";
 
 const LENGTH_PAGINATOR:number = 2;
 export const Novedades = () => {
 
-    const [posicionIndicador, setPosicionIndicador] = useState<number>(1);
+    const [posicionIndicador, setPosicionIndicador] = useState<number>(0);
 
     const handlePaginar = (lado: "BACK"|"NEXT"|"NULL", posicion: number = 0) => {
 

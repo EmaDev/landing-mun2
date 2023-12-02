@@ -18,7 +18,7 @@ export const Paginador = ({ action, length, active}: Props) => {
                 <button className={`block w-10 h-10 text-center border border-gray-100 rounded leading-8
                 ${active == item ? "bg-red-300" : ""}`}
                 onClick={() => action("NULL", item)} >
-                    {item}
+                    {item + 1}
                 </button>
             </li>
         ))

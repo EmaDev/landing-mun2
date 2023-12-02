@@ -22,7 +22,8 @@ export default function Home() {
 
       <Novedades/>
 
-      <section id="nosotros" className='min-h-[100vh] w-3/4 tablet:w-full laptop:w-3/4 flex flex-col items-center justify-items-center tablet:p-20 relative'>
+      <section id="nosotros" className='min-h-[100vh] w-4/5 tablet:w-full laptop:w-3/4 
+      flex flex-col items-center justify-items-center tablet:p-20 relative'>
         <img alt="" src='https://bright.tailwindawesome.com/_next/static/media/curved-dotted-line.38bf1b54.svg'
           className='hidden tablet:flex absolute right-0 left-0 m-auto z-10'
           style={{ filter: "saturate(1000%) brightness(100%) hue-rotate(50deg)" }} />
@@ -49,7 +50,7 @@ export default function Home() {
         <div className={`mt-4 p-4 desktop:w-3/4 flex flex-col items-center justify-center`}>
           <h2 className='text-3xl tablet:text-4xl laptop:text-5xl font-bold font-Poppins text-center'>Conoce Nuestras Sucursales</h2>
           <div className='flex text-xs tablet:text-lg mt-6 font-bold font-mono'>
-            <h4>
+            <h4 className='text-center'>
               {"Santo Domingo > Santiago > Puerto Plata > Cabarete > Sosua"}
             </h4>
           </div>
