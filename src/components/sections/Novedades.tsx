@@ -91,9 +91,9 @@ const RenderSecundario = () => {
                 <button className='p-2 bg-red-400 rounded-full relative text-white
             shadow-lg text-xs -rotate-3 mb-6'>Un MUN2 de opciones</button>
                 <h3 className='text-2xl desktop:text-xl font-bold font-Poppins mb-4'>
-                    sunt iure architecto veritatis praesentium vero ea digsigmus
+                    Las mejores marcas del mercado en ropa y zapatos
                 </h3>
-                <p className='text-lg desktop:text-xl desktop:mt-6'>Lorem architecto veritatis praesentium vero octus</p>
+                <h2>TOMMY - ZARA - FOREVER 21 - CALVIN KLEIN - GAP - NIKE - H&M - POLO</h2>
             </div>
 
             <div className={`w-full h-[75vh] laptop:h-[85vh] overflow-hidden relative bg-[rgba(0,0,0,0)]`} >
@@ -102,12 +102,3 @@ const RenderSecundario = () => {
         </div>
     )
 }
-/*
-::after{
-    background:  linear-gradient(to top, rgba(10,16,63,1) 0%, rgba(10,16,63,0) 100%);
-    content: '';
-    height: 50px;
-    position:absolute;
-    width: 100%;
-    bottom:0;
-  }*/

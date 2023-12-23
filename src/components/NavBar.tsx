@@ -63,14 +63,14 @@ export const NavBar = () => {
                           right-0 z-[80] top-[-100vh] duration-200 w-full rounded-bl-full laptop:rounded-none'>
                         <ul className='flex flex-col laptop:flex-row gap-[4vw] items-end w-full 
                             px-12 pt-20 laptop:p-0 bg-red-400 rounded-bl-full shadow-lg laptop:shadow-none'>
+                                <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
+                                <Link className='hover:text-red-300' href={"#novedades"}>Novedades</Link>
+                            </li>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#nosotros"}>Sobre Nosotros</Link>
                             </li>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#sucursales"}>Sucursales</Link>
-                            </li>
-                            <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
-                                <Link className='hover:text-red-300' href={"#novedades"}>Novedades</Link>
                             </li>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#preguntas"}>Preguntas frecuentes</Link>

@@ -18,7 +18,7 @@ export const CardOpinion = ({ data }: Props) => {
 
 
     return (
-        <div className='min-w-[220px] max-w-[240px] h-[300px] bg-white rounded-lg shadow-lg'>
+        <div className='min-w-[220px] max-w-[240px] min-h-[300px] bg-white rounded-lg shadow-lg pb-6'>
             <div className='m-4 text-xs'>
                 <img alt="" src={data.imagenURL} className='rounded-full w-[40px] h-[40px] mb-3'
                     style={{ objectFit: "cover" }} />

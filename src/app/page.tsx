@@ -33,8 +33,9 @@ export default function Home() {
 
         <div className='text-left w-full'>
           <h3 className='text-3xl laptop:text-5xl font-bold font-Poppins max-w-[550px] mb-6'>Sobre nosotros</h3>
-          <p className='max-w-[450px] text-lg'>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+          <p className='max-w-[450px] text-lg'>En Mun2 vas a poder encontrar ropa de segunda mano exclusiva y seleccionada y ropa nueva
+           con su etiqueta, de las mejores marcas del mundo, al mejor precio del mercado. Ven a descubrir que es posible vestir bien, 
+          sin gastar tanto. Tenemos un mundo de opciones para tí.</p>
         </div>
         <div className='grid tablet:grid-cols-2 gap-10 mt-10 laptop:w-3/4 relative z-20'>
           {DATA_SOBRE_NOSOTROS.map((item, i) => (
