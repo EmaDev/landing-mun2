@@ -79,8 +79,7 @@ export default function Home() {
 
       <section id="preguntas" className='min-h-[80vh] my-20 px-8 w-full tablet:w-3/4 justify-center items-center'>
         <h2 className='font-Poppins font-bold text-4xl mb-6'>Preguntas frecuentes</h2>
-        <p>Vestibulum ac diam sit amet quam vehicula elementum sed
-          sit amet dui. Curabitur arcu erat, accumsan id imperdiet et.</p>
+        <p>Estamos aquí para resolver todas tus dudas y brindarte la información que necesitas..</p>
 
         <div className='mt-8 flex flex-col margin-auto justify-center items-center'>
           {

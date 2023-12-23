@@ -76,7 +76,7 @@ export const NavBar = () => {
                                 <Link className='hover:text-red-300' href={"#preguntas"}>Preguntas frecuentes</Link>
                             </li>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
-                                <Link className='hover:text-red-300' href={"#"}>Contacto</Link>
+                                <Link className='hover:text-red-300' href={"#contacto"}>Contacto</Link>
                             </li>
                         </ul>
                     </div>

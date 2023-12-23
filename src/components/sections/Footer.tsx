@@ -9,7 +9,7 @@ export const Footer = () => {
         return fecha.getFullYear();
     }
     return (
-        <footer className='py-10 px-4  bg-red-400 w-full flex flex-col items-center justify-center text-white'>
+        <footer id="contacto" className='py-10 px-4  bg-red-400 w-full flex flex-col items-center justify-center text-white'>
             <div className='tablet:grid grid-cols-2 items-center justify-items-center gap-10 text-white w-3/4'>
                 <div className='hidden tablet:inline-block tablet:w-fit tablet:justify-self-start'>
                     <p className='font-bold text-xl'>Secciones</p>
@@ -59,10 +59,14 @@ export const Footer = () => {
 
             <div className='w-3/4 tablet:flex justify-center tablet:justify-between text-center'>
                 <span>© {calcularAnioActual()} todos los derechos reservados</span>
-                <br />
-                <span className='mt-8 tablet:mt-0 flex text-center'>Desarrollado por
-                    <Link className='font-bold ml-1' href={"https://www.instagram.com/bapp.estudio/"}> Bapp Estudio</Link></span>
+                <span className='mt-8 tablet:mt-0 flex justify-center'>Desarrollado por
+                <Link className='font-bold ml-1 w-fit' href={"https://www.instagram.com/bapp.estudio/"}> Bapp Estudio</Link></span>
             </div>
         </footer>
     )
 }
+/*
+  <span className='mt-8 tablet:mt-0 flex text-center bg-orange-500'>Desarrollado por
+                    <Link className='font-bold ml-1 w-fit' href={"https://www.instagram.com/bapp.estudio/"}> Bapp Estudio</Link></span>
+            </div>
+*/
