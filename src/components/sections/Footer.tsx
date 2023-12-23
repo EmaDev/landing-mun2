@@ -4,7 +4,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 
 export const Footer = () => {
 
-    const calcularAnioActual = ():number => {
+    const calcularAnioActual = (): number => {
         const fecha = new Date;
         return fecha.getFullYear();
     }
@@ -15,21 +15,22 @@ export const Footer = () => {
                     <p className='font-bold text-xl'>Secciones</p>
                     <ul className=''>
                         <li className='my-4'>
-                            <Link className='hover:text-red-300' href={"#nosotros"}>Nosotros</Link>
+                            <Link className='hover:text-red-300' href={"#novedades"}>Novedades</Link>
+                        </li>
+                        <li className='my-4'>
+                            <Link className='hover:text-red-300' href={"#nosotros"}>Equipo MUN2</Link>
                         </li>
                         <li className='my-4'>
                             <Link className='hover:text-red-300' href={"#sucursales"}>Sucursales</Link>
                         </li>
+
                         <li className='my-4'>
-                            <Link className='hover:text-red-300' href={"#novedades"}>Novedades</Link>
-                        </li>
-                        <li className='my-4'>
-                            <Link className='hover:text-red-300' href={"#preguntas"}>Preguntas frecuentes</Link>
+                            <Link className='hover:text-red-300' href={"#preguntas"}>Resolvemos tus dudas</Link>
                         </li>
                     </ul>
                 </div>
                 <div className='w-fit justify-self-end'>
-                    <p className='font-bold text-xl'>Contactanos</p>
+                    <p className='font-bold text-xl'>Contáctanos</p>
                     <ul className=''>
                         <li className='flex gap-4 items-center my-4 '>
                             <p className='p-2 bg-orange-400 rounded-lg w-fit'>
@@ -38,7 +39,7 @@ export const Footer = () => {
                             <div className=''>
                                 <span className='font-bold'>Email</span>
                                 <br />
-                                <Link href={"#"} className='text-md'>Mun2onlinerd@gmail.com</Link>
+                                <span className='text-md'>Info@tiendamun2.com </span>
                             </div>
                         </li>
                         <li className='flex gap-4 items-center my-4'>
@@ -46,9 +47,9 @@ export const Footer = () => {
                                 <MdPhone size="20px" color="#fff" />
                             </p>
                             <div className=''>
-                                <span className='font-bold'>Telefono</span>
+                                <span className='font-bold'>Teléfono</span>
                                 <br />
-                                <Link href={"#"} className='text-md'>809-571-0324</Link>
+                                <span  className='text-md'>809-571-0324</span>
                             </div>
                         </li>
                     </ul>
@@ -60,13 +61,8 @@ export const Footer = () => {
             <div className='w-3/4 tablet:flex justify-center tablet:justify-between text-center'>
                 <span>© {calcularAnioActual()} todos los derechos reservados</span>
                 <span className='mt-8 tablet:mt-0 flex justify-center'>Desarrollado por
-                <Link className='font-bold ml-1 w-fit' href={"https://www.instagram.com/bapp.estudio/"}> Bapp Estudio</Link></span>
+                    <Link className='font-bold ml-1 w-fit' href={"https://www.instagram.com/bapp.estudio/"}> Bapp Estudio</Link></span>
             </div>
         </footer>
     )
 }
-/*
-  <span className='mt-8 tablet:mt-0 flex text-center bg-orange-500'>Desarrollado por
-                    <Link className='font-bold ml-1 w-fit' href={"https://www.instagram.com/bapp.estudio/"}> Bapp Estudio</Link></span>
-            </div>
-*/

@@ -93,17 +93,17 @@ export const DATA_SOBRE_NOSOTROS: DataNosotrosInterface[] = [
         descripcion: `Mun2 está conformado por apasionados de la moda, comprometidos en brindarte la mejor experiencia de compra. 
         Cada miembro de nuestro 
         equipo comparte la misma visión: hacer que la moda sostenible y asequible sea una realidad para todos.`,
-        imagen: require("../assets/nosotros/1.jpeg")
+        imagen: require("../assets/nosotros/4.jpg")
     },
     {
-        titulo: "Nuestro Equipo",
+        titulo: "Primeras marcas",
         descripcion: `Seleccionamos, clasificamos y enviamos a cada tienda nuestros productos semanalmente, para que nuestro 
         amable equipo de atención al cliente se asegure que encuentres las mejores y más reconocidas marcas de indumentaria 
         del mundo, siempre en perfecto estado y con precios increíbles.`,
         imagen: require("../assets/nosotros/2.jpeg")
     },
     {
-        titulo: "Nuestro Equipo",
+        titulo: "Moda soltenible",
         descripcion: `Estamos orgullosos de ser la primera tienda en República Dominicana que, a través de la 
         sostenibilidad y la promoción de la reutilización de prendas, contribuye tanto a la sociedad mediante nuestros precios
          bajos,
@@ -154,7 +154,7 @@ export const PREGUNTAS_FRECUENTES: PreguntaFrecuenteInterface[] = [
         pregunta: "¿Reciben pagos con tarjeta?",
         respuesta: `Trabajamos con efectivo en todas nuestras sucursales, pero además, recibimos tarjetas en:
         📍Plaza central (Sto. Domingo) \n 📍Plaza Duarte (Sto. Domingo \n 📍Megacentro (Sto. Domingo) \n
-        📍Camino real (Pto. Plata) \n 📍Plaza Juan Brugal (Pto. Plata)`
+        📍Camino real (Pto. Plata) 📍Plaza Juan Brugal (Pto. Plata)`
     },
     {
         pregunta: "¿Cuándo reciben mercancía? ",

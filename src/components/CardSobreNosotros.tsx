@@ -9,7 +9,7 @@ interface Props {
 export const CardSobreNosotros = ({classes, data}:Props) => {
   return (
     <div className={`bg-orange-100 p-8 tablet:max-w-[450px] rounded-md ${classes}`}>
-        <p className='font-Poppins font-bold text-xl mb-5'>{data.titulo}</p>
+        <h3 className='font-Poppins font-bold text-xl tablet:text-2xl mb-5'>{data.titulo}</h3>
         <p>{data.descripcion}</p>
 
         <div className='m-auto mt-6 bg-gray-100 w-[90%] max-h-[250px] overflow-hidden'>

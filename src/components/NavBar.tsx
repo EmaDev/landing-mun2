@@ -67,13 +67,13 @@ export const NavBar = () => {
                                 <Link className='hover:text-red-300' href={"#novedades"}>Novedades</Link>
                             </li>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
-                                <Link className='hover:text-red-300' href={"#nosotros"}>Sobre Nosotros</Link>
+                                <Link className='hover:text-red-300' href={"#nosotros"}>Equipo MUN2</Link>
                             </li>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#sucursales"}>Sucursales</Link>
                             </li>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
-                                <Link className='hover:text-red-300' href={"#preguntas"}>Preguntas frecuentes</Link>
+                                <Link className='hover:text-red-300' href={"#preguntas"}>Resolvemos tus dudas</Link>
                             </li>
                             <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#contacto"}>Contacto</Link>

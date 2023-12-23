@@ -43,19 +43,19 @@ const RenderPrincipal = () => {
             <div className='tablet:w-[350px] laptop:w-[550px]'>
                 <button className='p-2 bg-red-400 rounded-full relative text-white
          shadow-lg text-xs -rotate-3 mb-6'>Un MUN2 de opciones</button>
-                <h3 className='text-2xl desktop:text-4xl font-bold font-Poppins mb-8'>La tienda MUN2 en Plaza Central expandio sus espacios</h3>
+                <h3 className='text-2xl desktop:text-4xl font-bold font-Poppins mb-8'>La tienda MUN2 en Plaza Central amplio sus espacios</h3>
 
-                <p className='text-lg desktop:text-xl desktop:my-12'>Ahora podran encontrar un gran variedad de productos. Ademas de ropa y zapatos
-                    como en todas nuestras sucursales, encontran mucho mas.
+                <p className='text-lg desktop:text-xl desktop:my-12'>Ahora podrán encontrar un gran variedad de productos. Además de ropa y zapatos
+                    como en todas nuestras sucursales, encontrán mucho más.
                 </p>
 
                 <ul className='mt-6 bg-orange-100 p-6 pt-10 desktop:py-16 rounded-md relative text-md desktop:text-xl'>
                     <span className='absolute left-5 -top-5 bg-blue-400 p-2 rounded-lg shadow-md'>
                         <IoMdCart size="22px" color="#fff" />
-                    </span>
+                    </span> 
                     <li className='flex align-between items-center gap-4 mb-2'>
                         <FiCheck color="green" size="22px" />
-                        <p>Electrodomesticos</p>
+                        <p>Electrodomésticos</p>
                     </li>
                     <li className='flex align-between items-center gap-4 mb-2'>
                         <FiCheck color="green" size="22px" />
@@ -67,11 +67,11 @@ const RenderPrincipal = () => {
                     </li>
                     <li className='flex align-between items-center gap-4 mb-2'>
                         <FiCheck color="green" size="22px" />
-                        <p>Articulos para el hogar</p>
+                        <p>Artículos para el hogar</p>
                     </li>
                     <li className='flex align-between items-center gap-4 mb-2'>
                         <FiCheck color="green" size="22px" />
-                        <p>Las mejores marcas en ropa y zapatosF</p>
+                        <p>Las mejores marcas en ropa y zapatos</p>
                     </li>
                 </ul>
             </div>

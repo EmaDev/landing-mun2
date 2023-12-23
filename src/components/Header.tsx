@@ -16,8 +16,8 @@ export const Header = () => {
             </div>
             <p className='text-4xl tablet:text-6xl laptop:text-7xl desktop:text-8xl font-Poppins'>Encuentra todo</p>
             <p className='text-4xl tablet:text-6xl laptop:text-7xl desktop:text-8xl mb-6 font-Poppins'>lo que <span className='text-yellow-200'>deseas</span></p>
-            <p className='font-medium text-sm tablet:text-xl laptop:text-2xl desktop:text-3xl font-Poppins'>Ropa de segunda mano, Electrodomesticos, Juguetes,</p>
-            <p className='font-medium text-sm tablet:text-xl laptop:text-2xl desktop:text-3xl font-Poppins text-yellow-200'>y mucho mas</p>
+            <p className='font-medium text-sm tablet:text-xl laptop:text-2xl desktop:text-3xl font-Poppins'>Ropa de segunda mano, Electrodomésticos, Juguetes,</p>
+            <p className='font-medium text-sm tablet:text-xl laptop:text-2xl desktop:text-3xl font-Poppins text-yellow-200'>y mucho más</p>
           </div>
 
         </div>
