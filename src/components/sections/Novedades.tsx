@@ -43,10 +43,10 @@ const RenderPrincipal = () => {
             <div className='tablet:w-[350px] laptop:w-[550px]'>
                 <button className='p-2 bg-red-400 rounded-full relative text-white
          shadow-lg text-xs -rotate-3 mb-6'>Un MUN2 de opciones</button>
-                <h3 className='text-2xl desktop:text-4xl font-bold font-Poppins mb-8'>La tienda MUN2 en Plaza Central amplio sus espacios</h3>
+                <h3 className='text-2xl desktop:text-4xl font-bold font-Poppins mb-8'>La tienda MUN2 en Plaza Central amplió sus espacios</h3>
 
-                <p className='text-lg desktop:text-xl desktop:my-12'>Ahora podrán encontrar un gran variedad de productos. Además de ropa y zapatos
-                    como en todas nuestras sucursales, encontrán mucho más.
+                <p className='text-lg desktop:text-xl desktop:my-12'>Ahora podrán encontrar una gran variedad de productos. Además de ropa y zapatos
+                    como en todas nuestras sucursales, encontrarán mucho más.
                 </p>
 
                 <ul className='mt-6 bg-orange-100 p-6 pt-10 desktop:py-16 rounded-md relative text-md desktop:text-xl'>

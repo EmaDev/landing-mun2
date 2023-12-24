@@ -67,7 +67,7 @@ export default function Home() {
       <section className='min-h-[80vh] w-full bg-gradient-to-r from-red-300 to-red-400 flex justify-center items-center'>
         <div className='my-20 tablet:w-3/4 flex flex-col justify-center items-center overflow-hidden'>
           <h3 className='mx-10 text-center font-Poppins font-bold text-5xl text-white mb-6'>Testimonio de clientes</h3>
-          <p className='mx-6 text-center font-Poppins font-medium text-xl text-white teblet:max-w-[600px]'>Que opinan nuestros sobre nosotros.</p>
+          <p className='mx-6 text-center font-Poppins font-medium text-xl text-white teblet:max-w-[600px]'>Que opinan nuestros clientes sobre nosotros.</p>
 
           <div className='mt-14 py-6 px-8 flex max-w-[100%] gap-8 overflow-auto'>
             {TESTIMONIOS.map(item => (
