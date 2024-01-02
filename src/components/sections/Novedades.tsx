@@ -41,7 +41,7 @@ const RenderPrincipal = () => {
     return (
         <div className='m-6 laptop:h-[80vh] tablet:grid tablet:grid-cols-2 tablet:gap-40 items-center'>
             <div className='tablet:w-[350px] laptop:w-[550px]'>
-                <button className='p-2 bg-red-400 rounded-full relative text-white
+                <button className='p-2 bg-red-600 rounded-full relative text-white
          shadow-lg text-xs -rotate-3 mb-6'>Un MUN2 de opciones</button>
                 <h3 className='text-2xl desktop:text-4xl font-bold font-Poppins mb-8'>La tienda MUN2 en Plaza Central amplió sus espacios</h3>
 
@@ -77,8 +77,8 @@ const RenderPrincipal = () => {
             </div>
 
             <div>
-                <CardDoble image1={require("../../assets/plaza-central/1.jpeg")} image2={require("../../assets/plaza-central/2.jpeg")} />
-                <CardDoble image1={require("../../assets/plaza-central/3.jpeg")} image2={require("../../assets/plaza-central/4.jpeg")} />
+                <CardDoble image1={require("../../assets/plaza-central/1.jpg")} image2={require("../../assets/plaza-central/2.jpg")} />
+                <CardDoble image1={require("../../assets/plaza-central/3.jpg")} image2={require("../../assets/plaza-central/4.jpg")} />
             </div>
         </div>
     )
@@ -88,7 +88,7 @@ const RenderSecundario = () => {
     return (
         <div className='w-full laptop:w-3/4 h-3/4'>
             <div className='w-full px-8'>
-                <button className='p-2 bg-red-400 rounded-full relative text-white
+                <button className='p-2 bg-red-600 rounded-full relative text-white
             shadow-lg text-xs -rotate-3 mb-6'>Un MUN2 de opciones</button>
                 <h3 className='text-2xl desktop:text-xl font-bold font-Poppins mb-4'>
                     Las mejores marcas del mercado en ropa y zapatos

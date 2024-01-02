@@ -16,7 +16,7 @@ export const Paginador = ({ action, length, active}: Props) => {
         return arr.map((item) => (
             <li key={item}>
                 <button className={`block w-10 h-10 text-center border border-gray-100 rounded leading-8
-                ${active == item ? "bg-red-300" : ""}`}
+                ${active == item ? "bg-red-500 text-white" : ""}`}
                 onClick={() => action("NULL", item)} >
                     {item + 1}
                 </button>

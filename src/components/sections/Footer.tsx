@@ -9,7 +9,7 @@ export const Footer = () => {
         return fecha.getFullYear();
     }
     return (
-        <footer id="contacto" className='py-10 px-4  bg-red-400 w-full flex flex-col items-center justify-center text-white'>
+        <footer id="contacto" className='py-10 px-4  bg-red-600 w-full flex flex-col items-center justify-center text-white'>
             <div className='tablet:grid grid-cols-2 items-center justify-items-center gap-10 text-white w-3/4'>
                 <div className='hidden tablet:inline-block tablet:w-fit tablet:justify-self-start'>
                     <p className='font-bold text-xl'>Secciones</p>

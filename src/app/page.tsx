@@ -7,8 +7,6 @@ import { CardOpinion } from '@/components/CardOpinion';
 import { ItemPregunta } from '@/components/ItemPregunta';
 import { Footer } from '@/components/sections/Footer';
 import { DATA_SOBRE_NOSOTROS, PREGUNTAS_FRECUENTES, SUCURSALES, TESTIMONIOS } from '@/assets/contenido';
-import { GaleriaImagenes } from '@/components/GaleriaImagenes';
-import { Paginador } from '@/components/Paginador';
 import { Novedades } from '@/components/sections/Novedades';
 
 export default function Home() {
@@ -20,7 +18,7 @@ export default function Home() {
        </div>*/}
       <Header />
 
-      <Novedades/>
+      <Novedades />
 
       <section id="nosotros" className='min-h-[100vh] w-4/5 tablet:w-full laptop:w-3/4 
       flex flex-col items-center justify-items-center tablet:p-20 relative'>
@@ -34,8 +32,8 @@ export default function Home() {
         <div className='text-left w-full'>
           <h3 className='text-3xl laptop:text-5xl font-bold font-Poppins max-w-[550px] mb-6'>Sobre nosotros</h3>
           <p className='max-w-[450px] text-lg'>En Mun2 vas a poder encontrar ropa de segunda mano exclusiva y seleccionada y ropa nueva
-           con su etiqueta, de las mejores marcas del mundo, al mejor precio del mercado. Ven a descubrir que es posible vestir bien, 
-          sin gastar tanto. Tenemos un mundo de opciones para tí.</p>
+            con su etiqueta, de las mejores marcas del mundo, al mejor precio del mercado. Ven a descubrir que es posible vestir bien,
+            sin gastar tanto. Tenemos un mundo de opciones para tí.</p>
         </div>
         <div className='grid tablet:grid-cols-2 gap-10 mt-10 laptop:w-3/4 relative z-20'>
           {DATA_SOBRE_NOSOTROS.map((item, i) => (
@@ -51,20 +49,17 @@ export default function Home() {
         <div className={`mt-4 p-4 desktop:w-3/4 flex flex-col items-center justify-center`}>
           <h2 className='text-3xl tablet:text-4xl laptop:text-5xl font-bold font-Poppins text-center'>Conoce Nuestras Sucursales</h2>
           <div className='flex text-xs tablet:text-lg mt-6 font-bold font-mono'>
-            <h4 className='text-center'>
+            <h4 className='text-center my-4'>
               {"Santo Domingo > Santiago > Puerto Plata > Cabarete > Sosua"}
             </h4>
           </div>
-          <div className='mt-10 grid grid-cols-2 gap-3 tablet:grid-cols-3 
-        desktop:grid-cols-4 tablet:gap-10 text-center flex justify-center'>
-            {SUCURSALES.map((suc, i) =>
-              <CardSucursal key={i + "-" + suc.nombre} data={suc} />
-            )}
-          </div>
+          {SUCURSALES.map((suc, i) =>
+            <CardSucursal key={i + "-" + suc.nombre} data={suc} />
+          )}
         </div>
       </section>
 
-      <section className='min-h-[80vh] w-full bg-gradient-to-r from-red-300 to-red-400 flex justify-center items-center'>
+      <section className='min-h-[80vh] w-full bg-gradient-to-r from-red-400 to-red-600 flex justify-center items-center'>
         <div className='my-20 tablet:w-3/4 flex flex-col justify-center items-center overflow-hidden'>
           <h3 className='mx-10 text-center font-Poppins font-bold text-5xl text-white mb-6'>Testimonio de clientes</h3>
           <p className='mx-6 text-center font-Poppins font-medium text-xl text-white teblet:max-w-[600px]'>Que opinan nuestros clientes sobre nosotros.</p>

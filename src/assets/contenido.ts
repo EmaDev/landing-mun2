@@ -2,90 +2,103 @@ import { DataNosotrosInterface, PreguntaFrecuenteInterface, SucursalInterface, T
 
 export const SUCURSALES: SucursalInterface[] = [
     {
-        nombre: "Megacentro",
-        ubicacion: "Santo Domingo",
-        horario: "De lunes a sábados de 9 AM a 8 PM. Domingos de 10 AM a 6 PM",
-        telefono: "809-468-2011",
-        descripcion: "2do Nivel"
+        nombre: "Santo Domingo",
+        sucursales: [
+            {
+                nombre: "Megacentro",
+                horario: "De lunes a sábados de 9 AM a 8 PM. Domingos de 10 AM a 6 PM",
+                telefono: "809-468-2011",
+                descripcion: "2do Nivel"
+            },
+            {
+                nombre: "Coral Mall",
+                horario: "De lunes a sábados de 9 AM a 7 PM.",
+                telefono: "809-466-6089",
+                descripcion: "1er Nivel"
+            },
+            {
+                nombre: "Plaza Naco",
+                horario: "De lunes a sábados de 9 AM a 7 PM.",
+                telefono: "809-793-6298",
+                descripcion: "1er Nivel"
+            },
+            {
+                nombre: "Plaza Central",
+                horario: "De lunes a sábados de 9 AM a 7 PM.",
+                telefono: "809-806-0798",
+                descripcion: "2do Nivel"
+            },
+            {
+                nombre: "Plaza Duarte",
+                horario: "De lunes a sábados de 9 AM a 7 PM. Domingos de 10 AM a 8 PM",
+                telefono: "809-745-8139",
+                descripcion: "Carrefour",
+            },
+        ],
     },
     {
-        nombre: "Coral Mall",
-        ubicacion: "Santo Domingo",
-        horario: "De lunes a sábados de 9 AM a 7 PM.",
-        telefono: "809-466-6089",
-        descripcion: "1er Nivel"
+        nombre: "Santiago",
+        sucursales: [
+            {
+                nombre: "Calle del Sol",
+                horario: "De lunes a sábados de 9 AM a 7 PM.",
+                telefono: "809-724-6146",
+                descripcion: "No. 42"
+            },
+            {
+                nombre: "Colinas Mall",
+                horario: "De lunes a sábados de 9 AM a 7 PM.",
+                telefono: "809-570-4689",
+                descripcion: "1er Nivel"
+            },
+            {
+                nombre: "Plaza Haché",
+                horario: "De lunes a sábados de 9 AM a 6 PM.",
+                telefono: "809-971-5633",
+                descripcion: ""
+            },
+        ]
     },
     {
-        nombre: "Plaza Naco",
-        ubicacion: "Santo Domingo",
-        horario: "De lunes a sábados de 9 AM a 7 PM.",
-        telefono: "809-793-6298",
-        descripcion: "1er Nivel"
+        nombre: "Puerto Plata",
+        sucursales: [
+            {
+                nombre: "Camino real",
+                horario: "De lunes a sábados de 9 AM a 6:30 PM.",
+                telefono: "809-261-7386",
+                descripcion: ""
+            },
+            {
+                nombre: "Plaza Juan Brugal",
+                horario: "De lunes a sábados de 9 AM a 6:30 PM.",
+                telefono: "809-261-2636",
+                descripcion: ""
+            },
+        ]
     },
     {
-        nombre: "Plaza Central",
-        ubicacion: "Santo Domingo",
-        horario: "De lunes a sábados de 9 AM a 7 PM.",
-        telefono: "809-806-0798",
-        descripcion: "2do Nivel"
+        nombre: "Sosua",
+        sucursales: [
+            {
+                nombre: "Plaza Mazur",
+                horario: "De lunes a sábados de 9 AM a 3:30 PM.",
+                telefono: "809-571-4900",
+                descripcion: ""
+            },
+        ]
     },
     {
-        nombre: "Plaza Duarte",
-        horario: "De lunes a sábados de 9 AM a 7 PM. Domingos de 10 AM a 8 PM",
-        telefono: "809-745-8139",
-        descripcion: "Carrefour",
-        ubicacion: "Santo Domingo"
-    },
-    {
-        nombre: "Calle del Sol",
-        ubicacion: "Santiago",
-        horario: "De lunes a sábados de 9 AM a 7 PM.",
-        telefono: "809-724-6146",
-        descripcion: "No. 42"
-    },
-    {
-        nombre: "Colinas Mall",
-        ubicacion: "Santiago",
-        horario: "De lunes a sábados de 9 AM a 7 PM.",
-        telefono: "809-570-4689",
-        descripcion: "1er Nivel"
-    },
-    {
-        nombre: "Plaza Haché",
-        ubicacion: "Santiago",
-        horario: "De lunes a sábados de 9 AM a 6 PM.",
-        telefono: "809-971-5633",
-        descripcion: ""
-    },
-    {
-        nombre: "Camino real",
-        ubicacion: "Puerto Plata",
-        horario: "De lunes a sábados de 9 AM a 6:30 PM.",
-        telefono: "809-261-7386",
-        descripcion: ""
-    },
-    {
-        nombre: "Plaza Juan Brugal",
-        ubicacion: "Puerto Plata",
-        horario: "De lunes a sábados de 9 AM a 6:30 PM.",
-        telefono: "809-261-2636",
-        descripcion: ""
-    },
-    {
-        nombre: "Plaza Mazur",
-        ubicacion: "Sosua",
-        horario: "De lunes a sábados de 9 AM a 3:30 PM.",
-        telefono: "809-571-4900",
-        descripcion: ""
-    },
-    {
-        nombre: "Plaza Ocean One",
-        ubicacion: "Cabarete",
-        horario: "De lunes a sábados de 9 AM a 6:30 PM.",
-        telefono: "809-571-0057",
-        descripcion: ""
+        nombre: "Cabarete",
+        sucursales: [
+            {
+                nombre: "Plaza Ocean One",
+                horario: "De lunes a sábados de 9 AM a 6:30 PM.",
+                telefono: "809-571-0057",
+                descripcion: ""
+            }
+        ]
     }
-]
+];
 
 export const DATA_SOBRE_NOSOTROS: DataNosotrosInterface[] = [
     {
@@ -134,7 +147,7 @@ export const TESTIMONIOS: TestimonioInterface[] = [
         tiendas. Pero desde que Mun2 esta en Megacentro 
         se volvió mi tienda favorita y la calidad es buenisima! Ahora visto de marca sin gastar mucho.."`
     },
-   
+
 ]
 //¿
 export const PREGUNTAS_FRECUENTES: PreguntaFrecuenteInterface[] = [

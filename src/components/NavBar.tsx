@@ -46,7 +46,7 @@ export const NavBar = () => {
     }
 
     return (
-        <div className={`z-[90] py-[0.6rem] laptop:py-2 w-full fixed bg-red-400 border-b-[1px] border-red-500 shadow-md text-white duration-300
+        <div className={`z-[90] py-[0.6rem] laptop:py-2 w-full fixed bg-red-600 border-b-[1px] border-red-800 shadow-md text-white duration-300
         ${ navHidden && "py-0"}`}
         >
 
@@ -62,7 +62,7 @@ export const NavBar = () => {
                           laptop:min-h-fit laptop:shadow-none
                           right-0 z-[80] top-[-100vh] duration-200 w-full rounded-bl-full laptop:rounded-none'>
                         <ul className='flex flex-col laptop:flex-row gap-[4vw] items-end w-full 
-                            px-12 pt-20 laptop:p-0 bg-red-400 rounded-bl-full shadow-lg laptop:shadow-none'>
+                            px-12 pt-20 laptop:p-0 bg-red-600 rounded-bl-full shadow-lg laptop:shadow-none'>
                                 <li className={`duration-300 ${navHidden ? "text-md" : "text-lg"}`} onClick={onToggleMenu}>
                                 <Link className='hover:text-red-300' href={"#novedades"}>Novedades</Link>
                             </li>
