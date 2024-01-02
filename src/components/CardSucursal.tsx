@@ -34,7 +34,7 @@ export const CardSucursal = ({ data }: Props) => {
                     <div className='mt-2 pt-4 border-t-2 tablet:grid grid-cols-2 laptop:grid-cols-3 gap-6 justify-items-center'>
                         {
                             data.sucursales.map(suc => (
-                                <ItemSucursal data={suc} />
+                                <ItemSucursal key={suc.nombre} data={suc} />
                             ))
                         }
                     </div>
